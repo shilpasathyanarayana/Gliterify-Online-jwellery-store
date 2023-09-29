@@ -1,0 +1,29 @@
+{
+    "items": [
+        {
+            "item_number": 110,
+            "category": "earrings",
+            "total_number": 4,
+            "price": 1280,
+            "date": "2023-09-25T03:42:23.000Z",
+            "order_id": "3001"
+        },
+        {
+            "item_number": 1,
+            "category": "rings",
+            "total_number": 6,
+            "price": 1380,
+            "date": "2023-09-25T03:42:23.000Z",
+            "order_id": "3001"
+        },
+        {
+            "item_number": 100,
+            "category": "chains",
+            "total_number": 1,
+            "price": 461,
+            "date": null,
+            "order_id": "3001"
+        }
+    ],
+    "total": "3121"
+}

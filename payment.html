@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment</title>
+    <link rel="stylesheet" href="payment.css">
+</head>
+<body>
+    <div class="sb paybills" id="paybills">
+        <form action="">
+            <div class="row">
+                <div class="col">
+                    <h3 class="title">Billing Address</h3>
+
+                    <div class="inputBox">
+                        <span>Full Name:</span>
+                        <input type="text" placeholder="name" />
+                    </div>
+
+                    <div class="inputBox">
+                        <span>Email:</span>
+                        <input type="text" placeholder="example@gmail.com" />
+                    </div>
+
+                    <div class="inputBox">
+                        <span>address:</span>
+                        <input type="text" placeholder="unit num - street -locality" />
+                    </div>
+
+                    <div class="inputBox">
+                        <span>City:</span>
+                        <input type="text" placeholder="city name" />
+                    </div>
+
+                    <div class="flex">
+                        <div class="inputBox">
+                            <span>Proviance:</span>
+                            <input type="text" placeholder="Proviance" />
+                        </div>
+
+                        <div class="inputBox">
+                            <span>Postal Code:</span>
+                            <input type="text" placeholder="X0X 0X0" />
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="col">
+                    <h3 class="title">Payment</h3>
+
+                    <div class="inputBox">
+                        <span>Cards Accepted:</span>
+                        <img src="./images/card_img.png" alt="" />
+                    </div>
+
+                    <div class="inputBox">
+                        <span>Name on the card:</span>
+                        <input type="text" placeholder="Full name" />
+                    </div>
+
+                    <div class="inputBox">
+                        <span>Card Number:</span>
+                        <input type="number" placeholder="0000-0000-0000-0000" />
+                    </div>
+
+
+                    <div class="inputBox">
+                        <span>Expiry Date</span>
+                        <input type="date" placeholder="MM/YYYY" />
+                    </div>
+
+                    <div class="inputBox">
+                        <span>CVV:</span>
+                        <input type="number" placeholder="XXX" />
+                    </div>
+                </div>
+
+            </div>
+            <input type="submit" value="proceed to checkout >>" class="submit-btn" />
+        </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Glitterify-Online store</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- to get the fade-up animation in the div copied this link below -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!-- and added data-aos in the div as well -->
+</head>
+
+<body>
+    <div class="nav">
+        <h1>Gliterify</h1>
+
+        <!-- <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="location.html">Visit Our store</a></li>
+            <li><a href="#">Contact Us</a></li>
+        </ul> -->
+        <div class="cart-container carticon">
+            <header class="cart-header">
+                <div class="shopping">
+                    <img src="./images/cart.png" onclick="getCartItem()">
+                </div>
+            </header>
+            <div class="list"></div>
+        </div>
+        <div class="cart-card">
+            <div id="cart-items">
+            </div>
+
+            <div class="checkout">
+                <div class="closeShopping">Close</div>
+                <div class="emptyCart" onclick="deleteCartItem()">Clear Cart</div>
+                <div id="totalAmount" class="total"></div>
+                <div class="place-order">
+                    <a href="/payment.html"><button>Place Order</button></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="headder">
+        <div class="para-headder">
+            <h1>Exclusive Collection</h1>
+            <h3>Just Launched</h3>
+        </div>
+        <div class="img-header">
+            <img src="./images/2.webp" alt="" width="1080px" height="500px">
+        </div>
+    </div>
+
+    <div class="headding">
+        <h2>Our Collections</h2>
+    </div>
+
+    <div id="categories" style="display: flex;justify-content: space-around;">
+    </div>
+
+
+    <div class="about" data-aos="fade-up">
+        <div class="image">
+            <div class="border">
+                <img src="./images/pearl.jpg">
+            </div>
+        </div>
+        <div class="text">
+            <h1 class="title">Comfort meets Classy</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias praesentium voluptatem accusamus,
+                quasi commodi animi dignissimos repudiandae officiis soluta harum, assumenda itaque, eum voluptatibus
+                accusantium neque.</p>
+            <!-- <button class="button" id="click-here">Click Here></button> -->
+        </div>
+    </div>
+
+    <div class="about" data-aos="fade-up">
+        <div class="text">
+            <h1 class="title">Trending Collection</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias praesentium voluptatem accusamus,
+                quasi commodi animi dignissimos repudiandae officiis soluta harum, assumenda itaque, eum voluptatibus
+                accusantium neque. </p>
+            <!-- <button class="button">Explore</button> -->
+        </div>
+        <div class="image">
+            <div class="border">
+                <img src="./images/gring1(2).webp">
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+
+        <div class="f-inline">
+            <img src="./images/2.avif">
+            <h3>Several payment Options</h3>
+        </div>
+
+        <div class="f-inline">
+            <img src="./images/5.avif">
+            <h3>Easy Shipping</h3>
+        </div>
+
+        <div class="f-inline">
+            <img src="./images/6.avif">
+            <h3>Connect with Us</h3>
+        </div>
+
+    </div>
+
+
+
+    <script src="script.js"></script>
+    <!-- to get scrolling animation attached this code of data-aos attributes below  -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <!-- scrolling animation code ends -->
+</body>
+
+</html>

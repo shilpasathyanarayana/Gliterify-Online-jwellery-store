@@ -1,0 +1,40 @@
+use-case :e-commerce website for jwelery.
+actors :customer,inventry management,business owner.
+
+customer:
+---------------------------------------------------------------------------------
+category of jwelery, number of item in each category, images, price, name,item number 
+1.brows the website
+2.product feature display
+
+selected item number,number of item,
+3.add to cart
+
+orderId generate, display order Id
+4.order submission
+
+retrive order details - item number, number of item, price, date of order
+5.myorder
+
+
+inventry management:
+-------------------------------------------------------------------------------------
+category of jwelery, number of item in each category, images, price, name,item number 
+2.remaining item list
+
+adding new item , restocking items, date of stock
+3.add to stock.
+
+item number, new price
+4.change the price.
+
+
+business owner:
+------------------------------------------------------------------------------------
+category of jwelery, number of item in each category, images, price, name,item number 
+1.inventry details
+
+date of order, sold item list, total sales figure
+2. sales report
+
+3.restock figure

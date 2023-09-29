@@ -1,0 +1,24 @@
+method: post
+url : /addToCart
+body : 
+{
+"item_number" : "1",
+"quantity":2,
+"category":"rings",
+"order_id":"2001"
+}
+
+1.get the item_number, quantity, category and orderid of selected item.
+2.check the selected category table for stock for the item_number
+4.if quantity <= stock  then,
+	a.get the item_numberand total number of item
+	b.check the selected category table to get the price for selected item_number
+	c.calculate price using the equation price * total_number
+	d.insert item_number, quantity, price, orderid  to cart table.
+	e.calculate total amount using 
+	f.select sum(price) as total from gliterify.cart where order_id =?;
+	g.check the cart table for orderid for every 
+	h.item_number, quantity, subtotal, total
+	i.send array of object - {"items":[{1,ring,2,530}, {3,bangle,1,120}],"total":650}
+5. else return out of stock.
+

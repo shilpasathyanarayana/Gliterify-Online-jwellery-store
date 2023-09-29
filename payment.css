@@ -1,0 +1,89 @@
+.paybills {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding:0px;
+    min-height: 100vh;
+    background: linear-gradient(90deg, #453e3b 60%, rgb(90, 74, 1) 40.1%);
+
+}
+
+.paybills form {
+    margin-left: 70px;
+    padding: 10px;
+    width: 800px;
+    background: #fff;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, .1);
+}
+
+.paybills form .row {
+    display: flex;
+    flex-wrap: wrap;
+    gap:5px;
+}
+
+.paybills form .row .col {
+    flex: 1 1 250px;
+}
+
+.paybills form .row .col .title {
+    font-size: 20px;
+    color: #333;
+    padding-bottom: 5px;
+    text-transform: uppercase;
+}
+
+.paybills form .row .col .inputBox {
+    margin: 15px 0;
+}
+
+.paybills form .row .col .inputBox span {
+    margin-bottom: 10px;
+    display: block;
+    text-align: left;
+    font-size: 12px;
+
+}
+
+.paybills .inputBox input {
+    width: 80%;
+    border: 1px solid #ccc;
+    padding: 10px 10px;
+    font-size: 15px;
+    text-transform: none;
+}
+
+.paybills .inputBox input:focus {
+    border: 1px solid #000;
+}
+
+.paybills form .row .col .flex {
+    display: flex;
+    gap: 15px;
+}
+
+.paybills form .row .col .flex .inputBox {
+    margin-top: 5px;
+}
+
+.paybills form .row .col .inputBox img {
+    height: 34px;
+    margin-top: 5px;
+    filter: drop-shadow(0 0 1px #000);
+}
+
+.paybills form .submit-btn {
+    width: 40%;
+    padding: 12px;
+    font-size: 15px;
+    background: #252322;
+    color: #fff;
+    margin-top: 5px;
+    margin-left: 210px;
+    cursor: pointer;
+    border-radius: 15px;
+}
+
+.paybills form .submit-btn:hover {
+    background: #453e3b;
+}

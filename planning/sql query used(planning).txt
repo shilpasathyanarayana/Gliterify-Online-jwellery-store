@@ -1,0 +1,46 @@
+Add to Cart:
+---------------------------------------------------------------------------
+click add to cart button
+that will appere in add to cart page
++ and - button, price, subtotal along with addes item 
+all added item(+ and - button, price, subtotal)
+total price
+
+API:
+steps:
+call this api from front end : http://localhost:3000/addtocart
+item_
+1. get required information from frontEnd:
+item number,count of selected item, selected category_name
+
+2.check wether selected item is in stock using below query
+select count(*) from gliterify.rings where item_number=?
+
+3.if count(*) >= count of selected item then calculate total price using below query
+select price from category_name where item number=?
+total item*price
+date
+
+4.Calcutale total amount using query
+select sum(price) as total from gliterify.cart where order_id =?;
+
+
+insert into cart table the selected item , total item selected, subtotal, and ordered date
+using below query
+insert into cart values(item_number='' ,total_item='',subtotal='', date='')
+return item available
+
+else{
+return 'out of stock'
+}
+-----------------------------------------------------------------------------
+
+order submission
+----------------------------------------------------------------------------
+
+
+
+
+
+
+
